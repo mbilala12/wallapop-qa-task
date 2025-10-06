@@ -19,7 +19,7 @@ test-results/
 *.zip
 
 # Env / secrets
-.env
+#.env
 
 # VS Code
 .vscode/
