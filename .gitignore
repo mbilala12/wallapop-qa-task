@@ -19,8 +19,7 @@ test-results/
 *.zip
 
 # Env / secrets
-.env
-src/testData/users.json
+#.env
 
 # VS Code
 .vscode/

@@ -35,11 +35,11 @@ jobs:
         run: npm run lint
 
       # If you rely on BASE_URL, define it as a repo Variable/Secret: Settings → Variables → Actions → New variable
-      - name: Run Playwright tests (Chromium)
+      - name: Run Playwright tests
         # If BASE_URL is not set in repo variables/secrets, your code uses a safe default.
         env:
           BASE_URL: ${{ vars.BASE_URL || secrets.BASE_URL }}
-        run: npx playwright test --project=chromium
+        run: npm run test
 
       - name: Upload Playwright HTML report
         if: always()
